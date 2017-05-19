@@ -22,7 +22,6 @@ class App extends Component {
         this.toggleSideBarVisibility = this.toggleSideBarVisibility.bind(this);
         this.getSidebarIcon = this.getSidebarIcon.bind(this);
         this.getSidebarContent = this.getSidebarContent.bind(this);
-        this.getMainContent = this.getMainContent.bind(this);
         this.updateBrowserWindowDimensions = this.updateBrowserWindowDimensions.bind(this);
     }
 
@@ -133,54 +132,10 @@ class App extends Component {
             );
         }
     }
-    getMainContent() {
-        return (
-            <Grid centered textAlign='center' >
-                  <Grid.Row >
-                      <Grid.Column mobile={16} tablet={8} computer={4} style={{margin: '20px'}}>
-                        <img height='150px' src='/paragraph.png' />
-                    </Grid.Column>
-                    <Grid.Column mobile={16} tablet={8} computer={4} style={{margin: '20px'}}>
-                        <img height='150px' src='/paragraph.png' />
-                    </Grid.Column>
-                      <Grid.Column mobile={16} tablet={8} computer={4} style={{margin: '20px'}}>
-                        <img height='150px' src='/paragraph.png' />
-                    </Grid.Column>
-                    <Grid.Column mobile={16} tablet={8} computer={4} style={{margin: '20px'}}>
-                        <img height='150px' src='/paragraph.png' />
-                    </Grid.Column>
-                      <Grid.Column mobile={16} tablet={8} computer={4} style={{margin: '20px'}}>
-                        <img height='150px' src='/paragraph.png' />
-                    </Grid.Column>
-                    <Grid.Column mobile={16} tablet={8} computer={4} style={{margin: '20px'}}>
-                        <img height='150px' src='/paragraph.png' />
-                    </Grid.Column>
-                         <Grid.Column mobile={16} tablet={8} computer={4} style={{margin: '20px'}}>
-                        <img height='150px' src='/paragraph.png' />
-                    </Grid.Column>
-                    <Grid.Column mobile={16} tablet={8} computer={4} style={{margin: '20px'}}>
-                        <img height='150px' src='/paragraph.png' />
-                    </Grid.Column>
-                      <Grid.Column mobile={16} tablet={8} computer={4} style={{margin: '20px'}}>
-                        <img height='150px' src='/paragraph.png' />
-                    </Grid.Column>
-                    <Grid.Column mobile={16} tablet={8} computer={4} style={{margin: '20px'}}>
-                        <img height='150px' src='/paragraph.png' />
-                    </Grid.Column>
-                      <Grid.Column mobile={16} tablet={8} computer={4} style={{margin: '20px'}}>
-                        <img height='150px' src='/paragraph.png' />
-                    </Grid.Column>
-                    <Grid.Column mobile={16} tablet={8} computer={4} style={{margin: '20px'}}>
-                        <img height='150px' src='/paragraph.png' />
-                    </Grid.Column>
-                  </Grid.Row>
-                </Grid>
-        );
-    }
+ 
     render() {
         let sidebarIcon = this.getSidebarIcon();
         let sidebarContent = this.getSidebarContent();
-        let mainContent = this.getMainContent();
         return (
         <div>
         <Menu  style={{marginBottom: '0px'}} size='massive' inverted>
